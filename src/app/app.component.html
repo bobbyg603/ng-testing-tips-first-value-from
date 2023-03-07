@@ -1,6 +1,7 @@
-
-<h2>{{ affirmation$ | async }}</h2>
-<div class="d-flex">
-  <button (click)="onClick()">Next</button>
-  <app-spinner [loading]="loading$ | async"></app-spinner>
+<h1>{{title}}</h1>
+<div class="affirmations">
+  <app-affirmations></app-affirmations>
+</div>
+<div class="counter">
+  <app-counter></app-counter>
 </div>

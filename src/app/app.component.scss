@@ -1,8 +1,13 @@
-.d-flex {
+:host {
     display: flex;
-    gap: 10px;
+    justify-content: center;
+    flex-direction: column;
+    gap: 16px;
 }
 
-button {
-    height: 30px;
+.affirmations, .counter {
+    width: 600px;
+    border: 1px solid lightgray;
+    border-radius: 8px;
+    padding: 16px;
 }

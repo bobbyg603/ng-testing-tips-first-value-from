@@ -5,12 +5,12 @@ import { from, map, Observable } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
-export class AffirmationService {
+export class AffirmationsService {
 
-  constructor(private affirmationClient: AffirmationClient) { }
+  constructor(private affirmationsClient: AffirmationClient) { }
 
   getAffirmation(): Observable<string> {
-    return from(this.affirmationClient.get())
+    return from(this.affirmationsClient.get())
       .pipe(
         map(response => response.affirmation)
       );
